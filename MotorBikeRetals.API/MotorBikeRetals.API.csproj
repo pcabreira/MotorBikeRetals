@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.4" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\MotorBikeRetals.Application\MotorBikeRetals.Application.csproj" />
+	  <ProjectReference Include="..\MotorBikeRetals.Core\MotorBikeRetals.Core.csproj" />
+	  <ProjectReference Include="..\MotorBikeRetals.Infrastructure\MotorBikeRetals.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

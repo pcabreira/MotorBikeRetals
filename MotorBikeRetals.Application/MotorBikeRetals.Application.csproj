@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\MotorBikeRetals.Core\MotorBikeRetals.Core.csproj" />
+	  <ProjectReference Include="..\MotorBikeRetals.Infrastructure\MotorBikeRetals.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
